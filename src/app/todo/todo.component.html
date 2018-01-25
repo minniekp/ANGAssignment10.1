@@ -1,0 +1,39 @@
+<div class="container">
+  <div class="row">
+      <section class="content">
+          <div class="col-md-8 col-md-offset-2">
+              <h1 style="text-align: center;">List of Todos</h1>
+              <hr/>
+              <div class="panel panel-default">
+                  <div class="panel-body">
+                      <div class="pull-right">
+                      </div>
+                      <div class="table-resposive">
+                          <table class="table table-filter">
+                              <tbody>
+                                  <tr *ngFor="let todoList of todoDetail;let i = index">
+                                      <td>
+                                          {{i + 1}}
+                                      </td>
+                                      <td>
+                                      </td>
+                                      <td>
+                                            <h4 class="title">
+                                                  {{todoList?.firstName}} 
+                                                  {{todoList?.lastName}}
+                                                  {{todoList?.email}}
+
+                                              </h4>
+                                              
+                                          
+                                      </td>
+                                  </tr>
+                              </tbody>
+                          </table>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+  </div>
+</div>
